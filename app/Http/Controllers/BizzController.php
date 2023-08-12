@@ -17,8 +17,7 @@ class BizzController extends Controller
         // $this->middleware(['role:super-admin','permission:publish articles|edit articles']);
         // $this->middleware(['role:Admin']);
     }
-
-
+    
     public function  add_biz()
     {
         return view('biz.create');
@@ -115,12 +114,9 @@ class BizzController extends Controller
             $img->resize(665, 750, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($storage_path.'/'.$item);
-
             File::delete($sourse_path.'/'.$item);
 
         }
-
-
 
     }
 }
