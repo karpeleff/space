@@ -1,0 +1,6 @@
+#check_reg + #button_reg {
+    display: none;
+}
+#check_reg:checked + #button_reg {
+    display: inline;
+}
