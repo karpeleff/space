@@ -108,8 +108,8 @@
 
                             <!--    <li><a href="">Восстановить пароль</a></li> -->
                             <li><a href="{{'/about'}}">О сервисе</a></li>
-                            <li><a href="{{'/send_message'}}">напишите нам</a></li>
-                            <li><a href="{{'/reference'}}">справочная информация</a></li>
+                            <li><a href="{{'/send_message'}}">Напишите нам</a></li>
+                            <li><a href="{{'/reference'}}">Справочная информация</a></li>
 
 
                         </ul>
