@@ -17,7 +17,7 @@ class BizzController extends Controller
         // $this->middleware(['role:super-admin','permission:publish articles|edit articles']);
         // $this->middleware(['role:Admin']);
     }
-    
+
     public function  add_biz()
     {
         return view('biz.create');
