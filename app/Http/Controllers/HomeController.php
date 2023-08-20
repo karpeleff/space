@@ -29,8 +29,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = Advt::paginate(6);
-       // dd($data);
-
+       // dd
         return view('welcome')->with('data', $data);
     }
 

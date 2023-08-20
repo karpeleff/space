@@ -56,7 +56,8 @@
         <div class="container">
             <div class="navbar-header">
                 <img src= {{asset("assets/images/favicons/logo.png" )}} width="50" height="50">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">service box</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">service box</a>
             </div>
             <div class="collapse navbar-collapse" id="custom-collapse">
                 <ul class="nav navbar-nav navbar-right">
