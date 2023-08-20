@@ -198,7 +198,8 @@ $out = json_decode($img, true);
     public  function send_message(Request $request)
     {
         $record = new UserMessage();
-        $record->user =  Auth::user()->email ? Auth::user()->email : 'гость';
+        $record->user =  Auth::user() ? Auth::user()->email : 'гость';
+        // Auth::user() ? Auth::user()->name : 'guest'
         $record->message = $request->message;
         $record->save();
 
@@ -207,7 +208,7 @@ $out = json_decode($img, true);
         $data = new stdClass();
         $data->to = '79020648016';
        // $data->text = 'Cообщение с сайта от '.Auth::user()->email.': '.$request->message;
-        $data->text = 'Cообщение с сайта от '.Auth::user()->email ? Auth::user()->email : 'гостя'.': '.$request->message;
+        $data->text = 'Cообщение с сайта от '.Auth::user() ? Auth::user()->email : 'гостя'.': '.$request->message;
 
         $sms = $smsru->send_one($data);
 
