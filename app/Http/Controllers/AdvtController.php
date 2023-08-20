@@ -206,8 +206,8 @@ $out = json_decode($img, true);
         $smsru = new SMSRU('3B3C642C-DDAF-A2AF-C45D-3F4DBA6FADC1');
         $data = new stdClass();
         $data->to = '79020648016';
-        $data->text = 'Cообщение с сайта от '.Auth::user()->email': '$request->message;
-        
+        $data->text = 'Cообщение с сайта от '.Auth::user()->email.': '.$request->message;
+
         $sms = $smsru->send_one($data);
 
         $this->myMicroBot($request->message);
