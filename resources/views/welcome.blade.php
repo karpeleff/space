@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">все категории</h2>
+                    <h2 class="module-title font-alt">private notes</h2>
                 </div>
             </div>
             <div class="row multi-columns-row">
