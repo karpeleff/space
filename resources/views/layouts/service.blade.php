@@ -106,7 +106,8 @@
                                     </form>
                                 </ul>
                             </li>
-
+                            <li><a href="{{'/register'}}">Регистрация</a></li>
+                            <li><a href="{{'/login'}}">Вход</a></li>
                             <!--    <li><a href="">Восстановить пароль</a></li> -->
                             <li><a href="{{'/about'}}">О сервисе</a></li>
                             <li><a href="{{'/send_message'}}">Напишите нам</a></li>
