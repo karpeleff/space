@@ -73,7 +73,7 @@
                     </li>
                     <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">бизнес услуги</a>
                         <ul class="dropdown-menu">
-
+                            <li><a href="{{ url('advt/create ') }}">добавить </a></li>
                             @foreach ($cat as $key => $value)
 
                                 <li><a href="{{ asset('/biz_cat/'.$key)}}">{{ $value }}</a></li>

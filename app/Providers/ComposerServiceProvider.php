@@ -33,7 +33,7 @@ class ComposerServiceProvider extends ServiceProvider
 
                 'equipment and transportation' => 'техника и перевозки',
                 'snacks' => ' пищевая индустрия',
-               
+
                 'construction' => 'строительство и  ремонт',
                 'job' => 'работа',
 
