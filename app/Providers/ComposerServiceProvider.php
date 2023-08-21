@@ -29,16 +29,16 @@ class ComposerServiceProvider extends ServiceProvider
         View::composer('*', function($view) {
 
             $cat = [
-                'nails' => 'маникюр',
-                'hair' => 'стрижка',
-                'taxi' => 'такси',
-                'snacks' => ' пицца суши роллы  ',
-                'pharmacy' => 'аптека',
-                'construction' => 'строительство ремонт',
+                'beauty and health' => 'Красота и здоровье',
+
+                'equipment and transportation' => 'техника и перевозки',
+                'snacks' => ' пищевая индустрия',
+               
+                'construction' => 'строительство и  ремонт',
                 'job' => 'работа',
-                'flowers' => 'цветы',
-                'furniture'=> 'мебель',
-                'transport'=> 'транспорт',
+
+
+
 
             ];
             $city = [

@@ -66,7 +66,6 @@
                         <ul class="dropdown-menu">
                             <li><a href="{{ url('advt/create ') }}">создать новое</a></li>
                             @foreach ($cat_advt as $key => $value)
-
                                 <li><a href="{{ asset('/advt_cat/'.$key)}}">{{ $value }}</a></li>
                             @endforeach
 

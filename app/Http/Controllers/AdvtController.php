@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Facades\Image;use SMSRU;
+use Intervention\Image\Facades\Image;
+use SMSRU;
 use Spatie\Permission\Models\Role;
 use stdClass;
 
