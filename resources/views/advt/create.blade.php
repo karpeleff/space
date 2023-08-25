@@ -41,6 +41,14 @@
 
 
                     {!!Form::open(['route' => 'advt.store', 'files' => true,'method'=>'POST'])!!}
+
+                    {!! Form::radio('name', 'value',true) !!}
+                    {!! Form::label('price', 'Частное обьявление ', array('class' => 'awesome')); !!}
+                    <br><br>
+                    {!! Form::radio('name', 'value') !!}
+                    {!! Form::label('price', 'Бизнес предложение ', array('class' => 'awesome')); !!}
+                    <br><br>
+
                     {!!Form::text('header',null,['class' => 'form-control','placeholder' => 'заголовок']);!!}
                     <br><br>
                     {!!Form::textarea('text',null,['class' => 'form-control','placeholder' => 'текст']);!!}
@@ -52,8 +60,7 @@
                     {!! Form::select('city', $city, null, ['class' => 'form-control']) !!}
                     <br><br>
                     {!! Form::label('email', 'Категория', array('class' => 'awesome')); !!}
-                    {!! Form::select('category', $cat_advt, null, ['class' => 'form-control']) !!}
-
+                    {!! Form::select('category', $cat_advt, null, ['class' => 'form-control control-hidden']) !!}
 
                     <br><br>
                     {!! Form::label('email', 'Выбрать фото(макс. 5шт)', array('class' => 'awesome')); !!}
@@ -61,7 +68,6 @@
                     {!! Form::file('file[]', ['multiple' => true]) !!}
                     <br><br>
                     {{Form::submit('Сохранить', ['class' => 'btn btn-large btn-primary openbutton'])}}
-
 
                     {!! Form::close() !!}
 
