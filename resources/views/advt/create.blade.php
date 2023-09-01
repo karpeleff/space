@@ -50,18 +50,16 @@
                                             <br><br>
                                             {!!Form::textarea('text',null,['class' => 'form-control','placeholder' => 'текст']);!!}
                                             <br><br>
+                                             {!! Form::label('email', 'Категория', array('class' => 'awesome')); !!}
+                                             {!! Form::select('category', $cat_advt, null, ['class' => 'form-control control-hidden','id'=>'advcat']) !!}
 
+                                              {!! Form::select('category', $cat, null, ['class' => 'form-control control-hidden','id'=>'bizcat']) !!}
+                                               <br><br>
+                                              {!! Form::label('email', 'Населенный пункт', array('class' => 'awesome')); !!}
+                                               {!! Form::select('city', $city, null, ['class' => 'form-control']) !!}
+                                             <br><br>
 
-                        {!!Form::text('price',null,['class' => 'form-control control-hidden','placeholder' => 'цена']) !!}
-
-                                            <br><br>
-                                            {!! Form::label('email', 'Населенный пункт', array('class' => 'awesome')); !!}
-                                            {!! Form::select('city', $city, null, ['class' => 'form-control']) !!}
-                                            <br><br>
-                                            {!! Form::label('email', 'Категория', array('class' => 'awesome')); !!}
-                                            {!! Form::select('category', $cat_advt, null, ['class' => 'form-control control-hidden','id'=>'advcat']) !!}
-
-                                            {!! Form::select('category', $cat, null, ['class' => 'form-control control-hidden','id'=>'bizcat']) !!}
+                                           {!!Form::text('price',null,['class' => 'form-control control-hidden','placeholder' => 'цена']) !!}
 
                                             <br><br>
                                             {!! Form::label('email', 'Выбрать фото(макс. 5шт)', array('class' => 'awesome')); !!}

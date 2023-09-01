@@ -57,10 +57,11 @@ class ComposerServiceProvider extends ServiceProvider
             $cat_advt = [
                 'tech'=> 'техника  и запчасти',
                 'clothes'=>'одежда',
-                'gadget'=>'электроника',
+                'gadget'=>'бытовая техника и электроника',
                 'animal'=>'животные',
                 'home'=>'дом и быт',
                 'realty'=>'недвижимость',
+                'free'  => 'отдам '
 
             ];
 
