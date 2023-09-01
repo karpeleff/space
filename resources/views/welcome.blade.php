@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">private notes</h2>
+                    <h2 class="module-title font-alt">все категории</h2>
                 </div>
             </div>
             <div class="row multi-columns-row">
@@ -47,7 +47,10 @@
                             <div class="shop-item-image"><img src="storage/{{$img[0]}}" alt=""/>
                                 <div class="shop-item-detail"><a  href="{{ url('/advt/'.$item->id) }}" class="btn btn-round btn-b"><span class="">подробнее</span></a></div>
                             </div>
-                            <h4 class="shop-item-title font-alt"><a href="#">{{$item->title}}</a></h4>{{$item->price}} Р.
+                            <h4 class="shop-item-title font-alt"><a href="#">{{$item->title}}</a></h4>
+                            @if ($item->price > 0)
+                            {{$item->price}} Р.
+                            @endif
                         </div>
                     </div>
 

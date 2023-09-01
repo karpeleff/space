@@ -65,7 +65,10 @@ class ComposerServiceProvider extends ServiceProvider
 
             ];
 
-            $view->with(['cat' => $cat,'city'=> $city,'cat_advt' => $cat_advt]);
+
+            $all_cat  = array_merge($cat, $cat_advt);
+
+            $view->with(['cat' => $cat,'city'=> $city,'cat_advt' => $cat_advt,'all_cat' => $all_cat]);
         });
     }
 }

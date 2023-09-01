@@ -59,7 +59,7 @@
                                                {!! Form::select('city', $city, null, ['class' => 'form-control']) !!}
                                              <br><br>
 
-                                           {!!Form::text('price',null,['class' => 'form-control control-hidden','placeholder' => 'цена']) !!}
+                                           {!!Form::text('price','00',['class' => 'form-control control-hidden']) !!}
 
                                             <br><br>
                                             {!! Form::label('email', 'Выбрать фото(макс. 5шт)', array('class' => 'awesome')); !!}

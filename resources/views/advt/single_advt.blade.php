@@ -29,7 +29,11 @@
                         </div>
                         <div class="row mb-20">
                             <div class="col-sm-12">
-                                <div class="price font-alt"><span class="amount">{{$data->price}} р.</span></div>
+                                <div class="price font-alt"><span class="amount">
+                                       @if ($data->price > 0)
+                                            {{$data->price}} Р.
+                                        @endif
+                                    </span></div>
                             </div>
                         </div>
                         <div class="row mb-20">
@@ -37,7 +41,7 @@
                             <br>
                             <div class="col-sm-12"><b>Населенный пункт : {{$data->city}}</b></div>
                             <div class="col-sm-12">
-                               <!-- <div class="product_meta"><b>Категория: <a href="#"> {{$data->category_id}}</a></b></div> -->
+                                <div class="product_meta"><b>Категория: <a href="#">  {{$all_cat[$data->category_id]}}</a></b></div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="description">
