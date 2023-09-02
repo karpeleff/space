@@ -32,7 +32,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
-    Route::resource('advt', AdvtController::class);
+    Route::resource('advt', AdvtController::class)->except(['show']);
+
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
     Route::get('/add_biz', [App\Http\Controllers\BizzController::class, 'add_biz'])->name('add_biz');
@@ -46,7 +47,10 @@ Route::group(['middleware' => ['auth']], function() {
         return view('advt.reference')->with('ref', $ref);
     });
 
+    Route::get('advt/show/{id}', [App\Http\Controllers\AdvtController::class, 'show']);
+
 });
+
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
 //Route::get('send-mail', [HomeController::class, 'sendMail']);
