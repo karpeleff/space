@@ -55,13 +55,15 @@
                             </div>
                            <!-- <div class="col-sm-4 mb-sm-20">
                                 <input class="form-control input-lg" type="number" name="" value="1" max="40" min="1" required="required"/>
-                            </div>  -->
+                            </div>-->
                             <div class="col-sm-8 "><a class="btn btn-lg btn-block btn-round btn-b  "   href="tel:{{$data->contact}}" >позвонить</a></div>
 <br><br><br>
+
+ <!--
                         <div class="col-sm-8 ">
                             <a aria-label="Chat on WhatsApp" href="https://wa.me/{{$data->contact}}"><img alt="Chat on WhatsApp"  src="{{asset("assets/images/wp.png")}}"/>
                                 <a />
-                        </div>
+                        </div> -->
 
 
                      <!--  https://wa.me/7-->
