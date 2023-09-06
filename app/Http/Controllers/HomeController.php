@@ -55,4 +55,13 @@ class HomeController extends Controller
     {
         return view('advt.about');
     }
+
+    public  function show($id){
+        $data = Advt::find($id);
+        //  $data['cat'] = Category::find($data->category_id)->name;
+
+        // dd($data);
+
+        return view('advt/single_advt')->with('data', $data);
+    }
 }

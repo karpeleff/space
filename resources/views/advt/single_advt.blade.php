@@ -58,19 +58,28 @@
                             </div>  -->
                             <div class="col-sm-8 "><a class="btn btn-lg btn-block btn-round btn-b  "   href="tel:{{$data->contact}}" >позвонить</a></div>
 <br><br><br>
-                            <div class="col-sm-8"><a class="btn  btn-lg btn-round btn-block btn-round btn-b "  href="{{asset("/")}}" >назад  в категорию</a></div>
+                        <div class="col-sm-8 ">
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/{{$data->contact}}"><img alt="Chat on WhatsApp"  src="{{asset("assets/images/wp.png")}}"/>
+                                <a />
+                        </div>
 
+
+                     <!--  https://wa.me/7-->
+                        <br><br><br>                 <div class="col-sm-8"><a class="btn  btn-lg btn-round btn-block btn-round btn-b "  href="{{asset("/")}}" >назад  в категорию</a></div>
+                        @isset(Auth::user()->email)
                             @if ($data->contact === Auth::user()->email)
-                            <br><br><br>
-                            <div class="col-sm-8">
-                                <form method="post" action="{{$data->id}}">
-                                    @csrf
-                                    @method('DELETE')
+                                <br><br><br>
+                                <div class="col-sm-8">
+                                    <form method="post" action="{{$data->id}}">
+                                        @csrf
+                                        @method('DELETE')
 
-                                    <button type="submit"  class="btn btn-default" >удалить обьявление</button>
-                                </form>
-                            </div>
+                                        <button type="submit"  class="btn btn-default" >удалить обьявление</button>
+                                    </form>
+                                </div>
                             @endif
+                        @endisset
+
                         </div>
 
 

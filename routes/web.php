@@ -28,6 +28,7 @@ Auth::routes();
 
 //Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+Route::get('advt/show/{id}', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
@@ -47,7 +48,7 @@ Route::group(['middleware' => ['auth']], function() {
         return view('advt.reference')->with('ref', $ref);
     });
 
-    Route::get('advt/show/{id}', [App\Http\Controllers\AdvtController::class, 'show']);
+   // Route::get('advt/show/{id}', [App\Http\Controllers\AdvtController::class, 'show']);
 
 });
 
