@@ -85,13 +85,13 @@
                     <li class="dropdown"><a class="dropdown-toggle" href="{{'/send_message'}}" data-toggle="dropdown">контакты</a>
 
                         <ul class="dropdown-menu">
-                            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="color:red ">экстра инфо</a>
+                           <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="color:red ">экстра инфо</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="tel: ">скорая</a></li>
                                     <li><a href="tel: ">полиция </a></li>
                                     <li><a href="tel: ">мчс</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" >вы вошли как: {{ Auth::user() ? Auth::user()->name : 'guest' }}</a>
 
                                 <ul class="dropdown-menu">
