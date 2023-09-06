@@ -56,7 +56,7 @@
                         <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="shop-item">
                                 <div class="shop-item-image"> <img src="{{asset("storage/".$img[0])}}" alt=""/>
-                                    <div class="shop-item-detail"><a  href="{{ url('/advt/'.$item->id) }}"   class="btn btn-round btn-b"><span class="">подробнее</span></a></div>
+                                    <div class="shop-item-detail"><a  href="{{ url('/advt/show/'.$item->id) }}"   class="btn btn-round btn-b"><span class="">подробнее</span></a></div>
                                 </div>
                                 <h4 class="shop-item-title font-alt"><a href="#">{{$item->title}}</a></h4>{{$item->price}} Р.
                             </div>
