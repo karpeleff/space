@@ -65,7 +65,6 @@
                                 <a />
                         </div> -->
 
-
                      <!--  https://wa.me/7-->
                         <div class="col-sm-8"><a class="btn  btn-lg btn-round btn-block btn-round btn-b "  href="{{asset("/")}}" >назад  в категорию</a></div>
                         @isset(Auth::user()->email)
