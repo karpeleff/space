@@ -57,7 +57,7 @@
                                 <input class="form-control input-lg" type="number" name="" value="1" max="40" min="1" required="required"/>
                             </div>-->
                             <div class="col-sm-8 "><a class="btn btn-lg btn-block btn-round btn-b  "   href="tel:{{$data->contact}}" >позвонить</a></div>
-<br><br><br>
+<br><br>
 
  <!--
                         <div class="col-sm-8 ">
@@ -67,7 +67,7 @@
 
 
                      <!--  https://wa.me/7-->
-                        <br><br><br>                 <div class="col-sm-8"><a class="btn  btn-lg btn-round btn-block btn-round btn-b "  href="{{asset("/")}}" >назад  в категорию</a></div>
+                        <div class="col-sm-8"><a class="btn  btn-lg btn-round btn-block btn-round btn-b "  href="{{asset("/")}}" >назад  в категорию</a></div>
                         @isset(Auth::user()->email)
                             @if ($data->contact === Auth::user()->email)
                                 <br><br><br>
